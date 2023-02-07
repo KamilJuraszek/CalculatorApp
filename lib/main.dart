@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         style: ElevatedButton.styleFrom(
           backgroundColor: btncolor,
-          shape: CircleBorder(),
+          shape: StadiumBorder(),
         ),
 
       ),
@@ -190,18 +190,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(padding: EdgeInsets.only(bottom: 100),),
                 SizedBox(
                   height: 80,
-                  width: 80,
+                  width: 170,
                   child: calcbutton('0', Colors.grey, Colors.black),
                 ),
                 SizedBox(
                   height: 80,
                   width: 80,
                   child: calcbutton('.', Colors.grey, Colors.black),
-                ),
-                SizedBox(
-                  height: 80,
-                  width: 80,
-                  child: calcbutton('⌫', Colors.grey, Colors.black),
                 ),
                 SizedBox(
                   height: 80,
@@ -234,8 +229,16 @@ class _MyHomePageState extends State<MyHomePage> {
       finalResult = '0';
       opr = '';
       preOpr = '';
-
-    } else if( opr == '=' && btnText == '=') {
+    }
+    else if(btnText  == '⌫') {
+      text = '0';
+      numOne = 0;
+      numTwo = 0;
+      result = '';
+      opr = '';
+      preOpr = '';
+    }
+    else if( opr == '=' && btnText == '=') {
 
       if(preOpr == '+') {
         finalResult = add();
