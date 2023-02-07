@@ -84,44 +84,54 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(padding: EdgeInsets.only(bottom: 120),),
-                calcbutton('AC', Colors.grey, Colors.black),
-                calcbutton('+/-', Colors.grey, Colors.black),
-                calcbutton('%', Colors.grey, Colors.black),
-                calcbutton('/', Colors.grey, Colors.black),
+                Padding(padding: EdgeInsets.only(bottom: 100),),
+                calcbutton('AC', Colors.white, Colors.black),
+                calcbutton('+/-', Colors.white, Colors.black),
+                calcbutton('%', Colors.white, Colors.black),
+                calcbutton('/', Colors.orange, Colors.black),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(padding: EdgeInsets.only(bottom: 120),),
+                Padding(padding: EdgeInsets.only(bottom: 100),),
                 calcbutton('7', Colors.grey, Colors.black),
                 calcbutton('8', Colors.grey, Colors.black),
                 calcbutton('9', Colors.grey, Colors.black),
-                calcbutton('x', Colors.grey, Colors.black),
+                calcbutton('x', Colors.orange, Colors.black),
               ],
             ),
             Row(
 
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(padding: EdgeInsets.only(bottom: 120),),
+                Padding(padding: EdgeInsets.only(bottom: 100),),
                 calcbutton('4', Colors.grey, Colors.black),
                 calcbutton('5', Colors.grey, Colors.black),
                 calcbutton('6', Colors.grey, Colors.black),
-                calcbutton('-', Colors.grey, Colors.black),
+                calcbutton('-', Colors.orange, Colors.black),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(padding: EdgeInsets.only(bottom: 150),),
+                Padding(padding: EdgeInsets.only(bottom: 100),),
                 calcbutton('1', Colors.grey, Colors.black),
                 calcbutton('2', Colors.grey, Colors.black),
                 calcbutton('3', Colors.grey, Colors.black),
-                calcbutton('+', Colors.grey, Colors.black),
+                calcbutton('+', Colors.orange, Colors.black),
               ],
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(padding: EdgeInsets.only(bottom: 100),),
+                calcbutton('0', Colors.grey, Colors.black),
+                calcbutton('.', Colors.grey, Colors.black),
+                calcbutton('⌫', Colors.grey, Colors.black),
+                calcbutton('=', Colors.orange, Colors.black),
+              ],
+            )
           ],
         ),
       ),
