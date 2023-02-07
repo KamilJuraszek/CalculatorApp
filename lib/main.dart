@@ -230,14 +230,6 @@ class _MyHomePageState extends State<MyHomePage> {
       opr = '';
       preOpr = '';
     }
-    else if(btnText  == '⌫') {
-      text = '0';
-      numOne = 0;
-      numTwo = 0;
-      result = '';
-      opr = '';
-      preOpr = '';
-    }
     else if( opr == '=' && btnText == '=') {
 
       if(preOpr == '+') {
